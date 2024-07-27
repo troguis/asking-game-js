@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/output.css">
+    <title>Juego de preguntas</title>
+</head>
+<body class="bg-teal-500 min-h-screen py-5 flex justify-center items-center">
+    <div class="w-[80%] max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-6 text-center">Juego de Preguntas</h1>
+        <h2 id="temporizador" class="text-center mb-6 text-red-500 font-semibold"></h2>
+        <form id="formulario" action="#" method="POST">
+            <!-- Pregunta 1 -->
+            <div class="mb-5">
+                <label for="question1" class="block text-lg font-medium text-gray-700 mb-2">1. ¿Cuál es la capital de Francia?</label>
+                <input type="text" id="question1" name="question1" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="Escribe tu respuesta">
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="mb-5">
+                <label for="question2" class="block text-lg font-medium text-gray-700 mb-2">2. ¿Qué planeta es conocido como el Planeta Rojo?</label>
+                <input type="text" id="question2" name="question2" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="Escribe tu respuesta">
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="mb-5">
+                <label for="question3" class="block text-lg font-medium text-gray-700 mb-2">3. ¿En qué continente se encuentra Egipto?</label>
+                <input type="text" id="question3" name="question3" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="Escribe tu respuesta">
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="mb-5">
+                <label for="question4" class="block text-lg font-medium text-gray-700 mb-2">4. ¿Cuál es el animal más grande del mundo?</label>
+                <input type="text" id="question4" name="question4" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="Escribe tu respuesta">
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="mb-5">
+                <label for="question5" class="block text-lg font-medium text-gray-700 mb-2">5. ¿Qué gas respiran los humanos principalmente?</label>
+                <input type="text" id="question5" name="question5" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="Escribe tu respuesta">
+            </div>
+
+            <div class="contains-btn flex gap-4">
+                <button id="enviar" type="button" class="bg-teal-500 flex-1 text-white py-3 rounded-lg font-semibold hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600">Enviar respuestas</button>
+
+                <button id="resetear" type="button" class="bg-rose-500 flex-1 text-white py-3 rounded-lg font-semibold hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-600">Reiniciar</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
